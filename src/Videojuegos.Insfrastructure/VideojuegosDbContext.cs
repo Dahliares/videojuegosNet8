@@ -18,14 +18,17 @@ namespace Videojuegos.Insfrastructure
 
                 entity.Property(e => e.Id).HasColumnName("id");
                 entity.Property(e => e.Nombre).HasColumnName("nombre");
-                entity.Property(e => e.Genero).HasColumnName("tipo");
-                entity.Property(e => e.Consola).HasColumnName("consola");
+                entity.Property(e => e.Genero).HasColumnName("genero");
+                entity.Property(e => e.Plataforma).HasColumnName("plataforma");
                 entity.Property(e => e.Company).HasColumnName("compania");
                 entity.Property(e => e.Estado).HasColumnName("estado");
-                entity.Property(e => e.Formato).HasColumnName("formato");
+                entity.Property(e => e.Region).HasColumnName("region");
                 entity.Property(e => e.Comentarios).HasColumnName("comentarios");
                 entity.Property(e => e.Idioma).HasColumnName("idioma");
                 entity.Property(e => e.Saga).HasColumnName("saga");
+                entity.Property(e => e.Manual).HasColumnName("manual");
+                entity.Property(e => e.Disco).HasColumnName("disco");
+                entity.Property(e => e.Portada).HasColumnName("img");
             });
         }
     }
